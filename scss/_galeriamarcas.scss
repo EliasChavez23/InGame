@@ -1,0 +1,118 @@
+// variables
+$img-width: 350px ;
+
+
+.imagenes--marcas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px ;
+    justify-content: space-between;
+    grid-gap: 50px;
+    .intel--logo{
+        width: $img-width;
+        grid-area: "intel";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px  white;
+            transition: all 500ms;
+        }
+    }
+    .intel--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .hyperx--logo{
+        width: $img-width;
+        grid-area: "hyperx";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px white;
+            transition: all 500ms;
+        }
+    }
+    .hyperx--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .amd--logo{
+        width: $img-width;
+        height: 200px;
+        grid-area: "amd";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px white;
+            transition: all 500ms;
+        }
+    }
+    .amd--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .logitech--logo{
+        width: $img-width;
+        height: 200px;
+        grid-area: "logitech";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px white;
+            transition: all 500ms;
+        }
+    }
+    .logitech--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .aorus--logo{
+        width: $img-width;
+        height: 200px;
+        grid-area: "aorus";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px white;
+            transition: all 500ms;
+        }
+    }
+    .aorus--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .razer--logo{
+        width: $img-width;
+        height: 200px;
+        grid-area: "razer";
+        transition: 800ms;
+        &:hover{
+            transform: scale(1.05,1.05);
+            box-shadow: 2px 2px 10px 10px white;
+            transition: all 500ms;
+        }
+    }
+    .razer--galeria{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .imagenes--marcas{
+        grid-template-areas: 
+        "intel"
+        "hyperx"
+        "amd"
+        "logitech"
+        "aorus"
+        "razer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        justify-content: center;
+    }
+    .intel--logo{
+        width: 250px;
+        grid-area: "intel";
+        transition: 800ms;
+    }
+}

@@ -1,0 +1,94 @@
+// variables
+$font-redes: 35px;
+
+.info--empresa{
+    font: 150% "Montserrat";
+    padding-top: 100px;
+    font-weight: bold;
+    text-align: center;
+    a{
+        color: black;
+    }
+}
+.texto--mapa{
+    font: 150% "Montserrat";
+    margin-left: 5px;
+}
+.mapa{
+    width: 335px;
+    height: 300px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #70d893;
+    margin-left: 10px;
+}
+.mail--contacto{    
+    font: 150% "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+.container--footer{
+    background-color: #70d893;
+    padding: 0px 5% ;
+    margin: 0 ;
+    .footer--copyright{
+        padding-top: 20px;
+    }
+    .logo--footer{
+        display: inline-block;
+        width: 100px;
+    }
+    .texto--copyright{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .redes--encabezado{
+        font-size: 18px;
+        padding-top: 25px;
+    }
+    .redes--sociales{
+        display: flex;
+        justify-content: space-between;
+    }
+    .instagram{
+        font-size: $font-redes;
+        color: #e1306c;
+    }
+    .facebook{
+        font-size: $font-redes;
+        color: #4267B2;
+    }
+    .youtube{
+        font-size: $font-redes;
+        color: red;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .texto--mapa{
+        font: 150% "Montserrat";
+        text-align: center;
+        font-size: 14px;
+    }
+    .mapa{
+        width: 315px;
+        border-style: double;
+        border-width: 5px;
+        border-color: #70d893;
+        margin-left: 20px;
+    }
+    .redes--encabezado{
+        font: 150% "Montserrat";
+        text-align: center;
+    }
+    .logo--footer{
+        width: 50%;
+        margin-left: 110px;
+    }
+    .mail--contacto{    
+        font: 18px "Montserrat";
+        font-weight: bold;
+        text-align: center;
+        padding: 25px;
+    }
+}

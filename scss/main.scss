@@ -1,0 +1,65 @@
+// variables
+$verde: #70d893;
+$violeta: #9370d8;
+
+// nesting
+/* inicio css index.html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    font-family: "Montserrat",  sans-serif;
+    margin: 0px;
+    background-color: $violeta;
+}
+
+// IMPORT PARTIAL _header.scss//
+@import "header.scss";
+
+
+.imagen--encabezado{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.texto--central{
+    text-align: center;
+    font: 180% "Montserrat";
+    font-weight: bold;
+    padding: 30px;
+}
+
+// IMPORT PARTIAL _galeriamarcas.scss //
+@import "galeriamarcas";
+
+
+// IMPORT PARTIAL _footer.scss // 
+@import "footer.scss";
+
+
+/* INCIO MEDIAS QUERIES RESPONSIVE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    /* MEDIA QUERIE HOME.HTML */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 5% ;
+        background-color: #70d893;
+        position: sticky;
+        top: 0px;
+    }
+    .logo{
+        width: 50px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 0px 10px ;
+        font-size: 8.50px;
+    }
+    a{
+        text-decoration: none;
+        color: black
+    }
+}
+/* FIN MEDIAS QUERIES RESPONSIVE */

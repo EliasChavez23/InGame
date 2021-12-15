@@ -10,7 +10,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 5%;
-  background-color: #70d893;
   position: sticky;
   top: 0px;
   z-index: 999999; }
@@ -175,7 +174,6 @@ a:hover {
     color: black; }
 
 .texto--mapa {
-  font: 150% "Montserrat";
   margin-left: 5px; }
 
 .mapa {
@@ -211,14 +209,11 @@ a:hover {
     display: flex;
     justify-content: space-between; }
   .container--footer .instagram {
-    font-size: 35px;
-    color: #e1306c; }
+    font-size: 35px; }
   .container--footer .facebook {
-    font-size: 35px;
-    color: #4267B2; }
+    font-size: 35px; }
   .container--footer .youtube {
-    font-size: 35px;
-    color: red; }
+    font-size: 35px; }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .texto--mapa {
@@ -242,6 +237,18 @@ a:hover {
     font-weight: bold;
     text-align: center;
     padding: 25px; } }
+
+header {
+  background-color: #70d893; }
+
+.container--footer .instagram {
+  color: #e1306c; }
+
+.container--footer .facebook {
+  color: #4267B2; }
+
+.container--footer .youtube {
+  color: red; }
 
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -267,3 +274,9 @@ a:hover {
     color: black; } }
 
 /* FIN MEDIAS QUERIES RESPONSIVE */
+h4, h5 {
+  font-size: 18px;
+  color: black; }
+
+h5 {
+  font-weight: bold; }

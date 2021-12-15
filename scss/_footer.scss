@@ -1,8 +1,11 @@
 // variables
 $font-redes: 35px;
+$font-texto: 150% "Montserrat";
+$verde: #70d893;
+$violeta: #9370d8;
 
 .info--empresa{
-    font: 150% "Montserrat";
+    font: $font-texto;
     padding-top: 100px;
     font-weight: bold;
     text-align: center;
@@ -11,7 +14,6 @@ $font-redes: 35px;
     }
 }
 .texto--mapa{
-    font: 150% "Montserrat";
     margin-left: 5px;
 }
 .mapa{
@@ -19,17 +21,17 @@ $font-redes: 35px;
     height: 300px;
     border-style: double;
     border-width: 5px;
-    border-color: #70d893;
+    border-color: $verde;
     margin-left: 10px;
 }
 .mail--contacto{    
-    font: 150% "Montserrat";
+    font: $font-texto;
     font-weight: bold;
     text-align: center;
     padding: 25px;
 }
 .container--footer{
-    background-color: #70d893;
+    background-color: $verde;
     padding: 0px 5% ;
     margin: 0 ;
     .footer--copyright{
@@ -53,20 +55,17 @@ $font-redes: 35px;
     }
     .instagram{
         font-size: $font-redes;
-        color: #e1306c;
     }
     .facebook{
         font-size: $font-redes;
-        color: #4267B2;
     }
     .youtube{
         font-size: $font-redes;
-        color: red;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 768px){
     .texto--mapa{
-        font: 150% "Montserrat";
+        font: $font-texto;
         text-align: center;
         font-size: 14px;
     }
@@ -78,7 +77,7 @@ $font-redes: 35px;
         margin-left: 20px;
     }
     .redes--encabezado{
-        font: 150% "Montserrat";
+        font: $font-texto;
         text-align: center;
     }
     .logo--footer{

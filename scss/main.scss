@@ -1,6 +1,7 @@
 // variables
 $verde: #70d893;
 $violeta: #9370d8;
+$fontH: 18px ;
 
 // nesting
 /* inicio css index.html */
@@ -34,6 +35,8 @@ body{
 // IMPORT PARTIAL _footer.scss // 
 @import "footer.scss";
 
+// IMPORT PARTIAL _colores.scss//
+@import "colores.scss";
 
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px){
@@ -63,3 +66,12 @@ body{
     }
 }
 /* FIN MEDIAS QUERIES RESPONSIVE */
+
+h4{
+    font-size: $fontH;
+    color: black;
+}
+h5{
+    @extend h4;
+    font-weight: bold;
+}

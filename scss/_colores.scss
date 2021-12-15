@@ -1,0 +1,26 @@
+$negro: #000; 
+$blanco: #fff;
+
+$colores: (
+    violeta: #9370d8,
+    verde: #70d893,
+    instagram: #e1306c,
+    facebook: #4267B2, 
+    youtube: red
+   );
+
+
+header{
+    background-color: map-get($colores, verde);
+}
+.container--footer{
+    .instagram{
+        color: map-get($colores, instagram);
+    }
+    .facebook{
+        color: map-get($colores, facebook);
+    }
+    .youtube{
+        color: map-get($colores, youtube);
+    }
+}

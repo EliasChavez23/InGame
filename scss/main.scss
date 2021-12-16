@@ -66,12 +66,3 @@ body{
     }
 }
 /* FIN MEDIAS QUERIES RESPONSIVE */
-
-h4{
-    font-size: $fontH;
-    color: black;
-}
-h5{
-    @extend h4;
-    font-weight: bold;
-}

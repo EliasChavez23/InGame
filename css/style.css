@@ -91,7 +91,7 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px  white;
       transition: all 500ms; }
-  .imagenes--marcas .intel--galeria {
+  .imagenes--marcas .intel--galeria, .imagenes--marcas .hyperx--galeria, .imagenes--marcas .amd--galeria, .imagenes--marcas .logitech--galeria, .imagenes--marcas .aorus--galeria, .imagenes--marcas .razer--galeria {
     display: flex;
     justify-content: center; }
   .imagenes--marcas .hyperx--logo {
@@ -102,9 +102,6 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px white;
       transition: all 500ms; }
-  .imagenes--marcas .hyperx--galeria {
-    display: flex;
-    justify-content: center; }
   .imagenes--marcas .amd--logo {
     width: 350px;
     height: 200px;
@@ -114,9 +111,6 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px white;
       transition: all 500ms; }
-  .imagenes--marcas .amd--galeria {
-    display: flex;
-    justify-content: center; }
   .imagenes--marcas .logitech--logo {
     width: 350px;
     height: 200px;
@@ -126,9 +120,6 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px white;
       transition: all 500ms; }
-  .imagenes--marcas .logitech--galeria {
-    display: flex;
-    justify-content: center; }
   .imagenes--marcas .aorus--logo {
     width: 350px;
     height: 200px;
@@ -138,9 +129,6 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px white;
       transition: all 500ms; }
-  .imagenes--marcas .aorus--galeria {
-    display: flex;
-    justify-content: center; }
   .imagenes--marcas .razer--logo {
     width: 350px;
     height: 200px;
@@ -150,9 +138,6 @@ a:hover {
       transform: scale(1.05, 1.05);
       box-shadow: 2px 2px 10px 10px white;
       transition: all 500ms; }
-  .imagenes--marcas .razer--galeria {
-    display: flex;
-    justify-content: center; }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .imagenes--marcas {
@@ -274,9 +259,3 @@ header {
     color: black; } }
 
 /* FIN MEDIAS QUERIES RESPONSIVE */
-h4, h5 {
-  font-size: 18px;
-  color: black; }
-
-h5 {
-  font-weight: bold; }

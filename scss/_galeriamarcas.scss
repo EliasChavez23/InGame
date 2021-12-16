@@ -1,6 +1,7 @@
 // variables
 $img-width: 350px ;
 
+// EXTEND //
 
 .imagenes--marcas{
     display: grid;
@@ -33,8 +34,7 @@ $img-width: 350px ;
         }
     }
     .hyperx--galeria{
-        display: flex;
-        justify-content: center;
+        @extend .intel--galeria;
     }
     .amd--logo{
         width: $img-width;
@@ -48,8 +48,7 @@ $img-width: 350px ;
         }
     }
     .amd--galeria{
-        display: flex;
-        justify-content: center;
+        @extend .intel--galeria;
     }
     .logitech--logo{
         width: $img-width;
@@ -63,8 +62,7 @@ $img-width: 350px ;
         }
     }
     .logitech--galeria{
-        display: flex;
-        justify-content: center;
+        @extend .intel--galeria;
     }
     .aorus--logo{
         width: $img-width;
@@ -78,8 +76,7 @@ $img-width: 350px ;
         }
     }
     .aorus--galeria{
-        display: flex;
-        justify-content: center;
+        @extend .intel--galeria;
     }
     .razer--logo{
         width: $img-width;
@@ -93,8 +90,7 @@ $img-width: 350px ;
         }
     }
     .razer--galeria{
-        display: flex;
-        justify-content: center;
+        @extend .intel--galeria;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 768px){

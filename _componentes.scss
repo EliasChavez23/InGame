@@ -1,0 +1,72 @@
+// VARIABLES //
+$verde: #70d893;
+$violeta: #9370d8;
+$verdeclaro: #9ae3b3 ;
+
+.encabezado{
+    display: flex;
+    justify-content: space-evenly;
+    .col-sm-3{
+        padding-top: 40px;
+        padding-left: 25px;
+    }
+    .card{
+        background-color: $verde;
+    }
+    .card-body{
+        font-size: 14px;
+    }
+    .bg--cardbody{
+        background-color: $verdeclaro;
+    }
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+.btn-color{
+    color: #000;
+    &:hover{
+        text-shadow: 1px 1px $violeta;
+    }
+}
+
+.imagenes--componentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    gap: 50px;
+    padding: 30px;
+    .procesadori3--logo{
+        width: 140px;
+        grid-area: "i3";
+    }
+    .procesadori3--galeria{
+        display: flex;
+        justify-content: center;
+    }
+    .procesadori5--logo{
+        width: 140px;
+        height: 140px;
+        grid-area: "i5";
+    }
+    .procesadori5--galeria{
+        @extend .procesadori3--galeria
+    }
+    .procesadori7--logo{
+        width: 170px;
+        height: 140px;
+        grid-area: "i7";
+    }
+    .procesadori7--galeria{
+        @extend .procesadori3--galeria
+    }
+    .procesadori9--logo{
+        width: 180px;
+        height: 140px;
+        grid-area: "i9";
+    }
+    .procesadori9--galeria{
+        @extend .procesadori3--galeria
+    }
+}

@@ -31,12 +31,17 @@ body{
 // IMPORT PARTIAL _galeriamarcas.scss //
 @import "galeriamarcas";
 
-
 // IMPORT PARTIAL _footer.scss // 
 @import "footer.scss";
 
 // IMPORT PARTIAL _colores.scss//
 @import "colores.scss";
+
+// IMPORT PARTIAL componentes.scss//
+@import "componentes.scss";
+
+// IMPORT PARTIAL _perifericos.scss//
+@import "perifericos.scss";
 
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px){

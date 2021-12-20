@@ -235,6 +235,63 @@ header {
 .container--footer .youtube {
   color: red; }
 
+.encabezado {
+  display: flex;
+  justify-content: space-evenly; }
+  .encabezado .col-sm-3 {
+    padding-top: 40px;
+    padding-left: 25px; }
+  .encabezado .card {
+    background-color: #70d893; }
+  .encabezado .card-body {
+    font-size: 14px; }
+  .encabezado .bg--cardbody {
+    background-color: #9ae3b3; }
+
+.btn:focus {
+  box-shadow: none; }
+
+.btn-color {
+  color: #000; }
+  .btn-color:hover {
+    text-shadow: 1px 1px #9370d8; }
+
+.imagenes--componentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px;
+  gap: 50px;
+  padding: 30px; }
+  .imagenes--componentes .procesadori3--logo {
+    width: 140px;
+    grid-area: "i3"; }
+  .imagenes--componentes .procesadori3--galeria, .imagenes--componentes .procesadori5--galeria, .imagenes--componentes .procesadori7--galeria, .imagenes--componentes .procesadori9--galeria {
+    display: flex;
+    justify-content: center; }
+  .imagenes--componentes .procesadori5--logo {
+    width: 140px;
+    height: 140px;
+    grid-area: "i5"; }
+  .imagenes--componentes .procesadori7--logo {
+    width: 170px;
+    height: 140px;
+    grid-area: "i7"; }
+  .imagenes--componentes .procesadori9--logo {
+    width: 180px;
+    height: 140px;
+    grid-area: "i9"; }
+
+.auriculares--logitech {
+  padding: 50px; }
+
+.auriculares--logitech2 {
+  width: 280px;
+  padding: 50px; }
+
+.col-sm-8 {
+  padding-top: 40px;
+  padding-left: 25px; }
+
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /* MEDIA QUERIE HOME.HTML */

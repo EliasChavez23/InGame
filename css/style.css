@@ -281,16 +281,114 @@ header {
     height: 140px;
     grid-area: "i9"; }
 
-.auriculares--logitech {
-  padding: 50px; }
+.imagenes--perifericos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px;
+  gap: 50px;
+  padding: 30px; }
+  .imagenes--perifericos .col-sm-8 {
+    padding-top: 40px;
+    padding-left: 25px; }
+  .imagenes--perifericos .auriculares--logitech {
+    width: 140px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculareslogitech--galeria, .imagenes--perifericos .auriculareslogitech2--galeria, .imagenes--perifericos .auriculareslogitech3--galeria, .imagenes--perifericos .auriculareslogitech4--galeria, .imagenes--perifericos .auriculareslogitech5--galeria, .imagenes--perifericos .auriculareslogitech6--galeria, .imagenes--perifericos .auriculareslogitech7--galeria {
+    display: flex;
+    justify-content: center; }
+  .imagenes--perifericos .auriculares--logitech2 {
+    width: 170px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculares--logitech3 {
+    width: 170px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculares--logitech4 {
+    width: 160px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculares--logitech5 {
+    width: 160px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculares--logitech6 {
+    width: 160px;
+    grid-area: "logitech"; }
+  .imagenes--perifericos .auriculares--logitech7 {
+    width: 160px;
+    grid-area: "logitech"; }
 
-.auriculares--logitech2 {
-  width: 280px;
-  padding: 50px; }
+.texto--titulo {
+  font: 150% "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  margin: 35px;
+  padding-top: 35px; }
 
-.col-sm-8 {
-  padding-top: 40px;
-  padding-left: 25px; }
+.texto--parrafo {
+  padding: 50px;
+  margin: 60px; }
+  .texto--parrafo h3 {
+    font: 150% "Montserrat";
+    font-weight: bold; }
+
+.texto--mapa {
+  font: 150% "Montserrat";
+  text-align: center;
+  font-size: 22px; }
+
+.mapa {
+  width: 400px;
+  height: 350px;
+  border-style: double;
+  border-width: 5px;
+  border-color: #70d893;
+  margin: 20px;
+  margin-left: 520px; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .texto--titulo {
+    font: 150% "Montserrat";
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin: 35px;
+    padding-top: 35px; }
+  .texto--parrafo {
+    padding: 25px;
+    margin: 0px;
+    font-size: 12px; }
+    .texto--parrafo h3 {
+      font: 150% "Montserrat";
+      font-weight: bold; }
+  .texto--mapa {
+    font: 150% "Montserrat";
+    text-align: center;
+    font-size: 14px; }
+  .mapa {
+    width: 315px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #70d893;
+    margin-left: 20px; } }
+
+.texto--formulario--titulo {
+  text-align: center;
+  margin: 35px; }
+  .texto--formulario--titulo h1 {
+    font: 150% "Montserrat";
+    font-weight: bold; }
+
+.formulario {
+  display: flex;
+  justify-content: center; }
+  .formulario .texto--apellido {
+    background-color: #70d893; }
+  .formulario .texto--nombre {
+    background-color: #70d893; }
+  .formulario .texto--mail {
+    background-color: #70d893; }
+  .formulario .texto--edad {
+    background-color: #70d893; }
+  .formulario .texto--problema {
+    background: #70d893; }
 
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -313,6 +411,18 @@ header {
     font-size: 8.50px; }
   a {
     text-decoration: none;
-    color: black; } }
+    color: black; }
+  .imagenes--componentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 50px;
+    padding: 30px; }
+  .imagenes--perifericos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 50px;
+    padding: 30px; } }
 
 /* FIN MEDIAS QUERIES RESPONSIVE */

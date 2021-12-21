@@ -1,0 +1,32 @@
+// VARIABLES //
+$verde: #70d893;
+$violeta: #9370d8;
+$font-texto: 150% "Montserrat";
+
+.texto--formulario--titulo{
+    text-align: center;
+    margin: 35px;
+    h1{
+       font: $font-texto;
+       font-weight: bold;
+    }
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    .texto--apellido{
+        background-color: $verde;
+    }
+    .texto--nombre{
+        background-color: $verde;
+    }
+    .texto--mail{
+        background-color: $verde;
+    }
+    .texto--edad{
+        background-color: $verde;
+    }
+    .texto--problema{
+        background: $verde;
+    }
+}

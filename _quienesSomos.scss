@@ -1,0 +1,64 @@
+// VARIABLES //
+$font-texto: 150% "Montserrat";
+
+.texto--titulo{
+    font: $font-texto;
+    font-weight: bold;
+    text-align: center;
+    margin: 35px;
+    padding-top: 35px;
+}
+.texto--parrafo{
+    padding: 50px;
+    margin: 60px;
+    h3{
+        font: $font-texto;
+        font-weight: bold;
+    }
+}
+.texto--mapa{
+    font: $font-texto;
+    text-align: center;
+    font-size: 22px;
+}
+.mapa{
+    width: 400px;
+    height: 350px;
+    border-style: double;
+    border-width: 5px;
+    border-color: $verde;
+    margin: 20px;
+    margin-left: 520px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .texto--titulo{
+        font: $font-texto;
+        font-weight: bold;
+        font-size: larger;
+        text-align: center;
+        margin: 35px;
+        padding-top: 35px;
+    }
+    .texto--parrafo{
+        padding: 25px;
+        margin: 0px;
+        font-size: 12px;
+        h3{
+            font: $font-texto;
+            font-weight: bold;
+        }
+    }
+    .texto--mapa{
+        font: $font-texto;
+        text-align: center;
+        font-size: 14px;
+    }
+    .mapa{
+        width: 315px;
+        border-style: double;
+        border-width: 5px;
+        border-color: #70d893;
+        margin-left: 20px;
+    }
+}    

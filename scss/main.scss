@@ -29,7 +29,7 @@ body{
 }
 
 // IMPORT PARTIAL _galeriamarcas.scss //
-@import "galeriamarcas";
+@import "galeriaMarcas";
 
 // IMPORT PARTIAL _footer.scss // 
 @import "footer.scss";
@@ -42,6 +42,12 @@ body{
 
 // IMPORT PARTIAL _perifericos.scss//
 @import "perifericos.scss";
+
+// IMPORT PARTIAL _quienesSomos.scss//
+@import "quienesSomos.scss";
+
+// IMPORT PARTIAL _contacto.scss//
+@import "contacto.scss";
 
 /* INCIO MEDIAS QUERIES RESPONSIVE */
 @media only screen and (min-width: 0px) and (max-width: 768px){
@@ -68,6 +74,20 @@ body{
     a{
         text-decoration: none;
         color: black
+    }
+    .imagenes--componentes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px;
+        gap: 50px;
+        padding: 30px;
+    }
+    .imagenes--perifericos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px;
+        gap: 50px;
+        padding: 30px;
     }
 }
 /* FIN MEDIAS QUERIES RESPONSIVE */

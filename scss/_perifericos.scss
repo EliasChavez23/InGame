@@ -9,77 +9,118 @@ $verdeclaro: #9ae3b3;
     grid-template-rows: 250px 50px 250px 50px 250px 50px;
     padding: 30px;
     gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
-    "auriculareslogitech--galeria auriculareslogitech2--galeria auriculares logitech3--galeria"
-    "TEXTO-G733 TEXTO-G635 TEXTO-G332"
-    "auriculareslogitech4--galeria auriculareslogitech5--galeria auriculareslogitech6--galeria"
-    "TEXTO-G733KDA TEXTO-GPROGAMING TEXTO-G435"
-    "auriculareslogitech7--galeria"
-    "TEXTO-G335";
-
-    .auriculares--logitech{
+      "auricularesG733 auricularesG635 auricularesG332"
+      "TEXTO-G733 TEXTO-G635 TEXTO-G332"
+      "auricularesG733KDA auricularesGPRO auricularesG435"
+      "TEXTO-G733KDA TEXTO-GPROGAMING TEXTO-G435"
+      "auricularesG335 . ."
+      "TEXTO-G335 . .";
+  }
+.auricularesG733{ 
+    grid-area: auricularesG733;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    filter: drop-shadow(8px 8px 8px black); 
+    .auricularesG733--logo{
         width: 170px;
         height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech--galeria{
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-    .auriculares--logitech2{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech2--galeria{
-        @extend .auriculareslogitech--galeria
-    }
-    .auriculares--logitech3{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech3--galeria{
-        @extend .auriculareslogitech--galeria
-    }
-    .auriculares--logitech4{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech4--galeria{
-        @extend .auriculareslogitech--galeria
-    }
-    .auriculares--logitech5{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech5--galeria{
-        @extend .auriculareslogitech--galeria
-    }
-    .auriculares--logitech6{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech6--galeria{
-        @extend .auriculareslogitech--galeria
-    }
-    .auriculares--logitech7{
-        width: 170px;
-        height: 170px;
-        grid-area: "logitech";
-        filter: drop-shadow(8px 8px 8px black);
-    }
-    .auriculareslogitech7--galeria{
-        @extend .auriculareslogitech--galeria
     }
 }
+  
+.auricularesG635{ 
+    grid-area: auricularesG635; 
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesG635--logo{
+        width: 170px;
+        height: 170px;
+    }
+}
+  
+.auricularesG332{ 
+    grid-area: auricularesG332; 
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesG332--logo{
+        width: 170px;
+        height: 170px;
+    }
+}
+  
+.auricularesG733KDA{ 
+    grid-area: auricularesG733KDA; 
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesG733KDA--logo{
+        width: 170px;
+        height: 170px;
+    }
+}
+  
+.auricularesGPRO{ 
+    grid-area: auricularesGPRO;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesGPRO--logo{
+        width: 170px;
+        height: 170px;
+    } 
+}
+  
+.auricularesG435{ 
+    grid-area: auricularesG435;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesG435--logo{
+        width: 170px;
+        height: 170px;
+    } 
+}
+  
+.auricularesG335{ 
+    grid-area: auricularesG335;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    .auricularesG335--logo{
+        width: 170px;
+        height: 170px;
+    } 
+}
+  
+.TEXTO-G733{ 
+    grid-area: TEXTO-G733;
+}
+  
+.TEXTO-G635{ 
+    grid-area: TEXTO-G635; 
+}
+  
+.TEXTO-G332{ 
+    grid-area: TEXTO-G332; 
+}
+  
+.TEXTO-G733KDA{ 
+    grid-area: TEXTO-G733KDA; 
+}
+  
+.TEXTO-GPROGAMING{ 
+    grid-area: TEXTO-GPROGAMING; 
+}
+  
+.TEXTO-G435{ 
+    grid-area: TEXTO-G435; 
+}
+  
+.TEXTO-G335{ 
+    grid-area: TEXTO-G335; 
+}
+  

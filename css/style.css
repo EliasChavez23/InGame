@@ -4,8 +4,7 @@ body {
   font-family: "Montserrat",  sans-serif;
   margin: 0px;
   background: #b5a7a7;
-  background: linear-gradient(90deg, #b5a7a7 0%, #baacac 53%, #d0c2c2 96%, #8f8484 100%);
-}
+  background: linear-gradient(90deg, #b5a7a7 0%, #baacac 53%, #d0c2c2 96%, #8f8484 100%); }
 
 header {
   display: flex;
@@ -155,12 +154,7 @@ a:hover {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .imagenes--marcas {
-    grid-template-areas: "intel"
- "hyperx"
- "amd"
- "logitech"
- "aorus"
- "razer";
+    grid-template-areas: "intel" "hyperx" "amd" "logitech" "aorus" "razer";
     grid-template-columns: 100%;
     grid-template-rows: 15% 15% 15% 15% 15% 15%;
     justify-content: center; }
@@ -293,12 +287,7 @@ header {
   padding: 30px;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "PROCESADOR-I3-8thGEN PROCESADOR-I3-9thGEN PROCESADOR-I3-10thGEN"
- "TEXTO-I3 TEXTO-I3-9thGEN TEXTO-I3-10thGEN"
- "PROCESADOR-I5-9thGEN PROCESADOR-I5-10thGEN PROCESADOR-I7-9thGEN"
- "TEXTO-I5-8thGEN TEXTO-I5-9thGEN TEXTO-I5-10thGEN"
- "PROCESADOR-I7-10thGEN PROCESADOR-I9-9thGEN PROCESADOR-I9-10thGEN"
- "TEXTO-I7-8thGEN TEXTO-I7-9thGEN TEXTO-I7-10thGEN"; }
+  grid-template-areas: "PROCESADOR-I3-8thGEN PROCESADOR-I3-9thGEN PROCESADOR-I3-10thGEN" "TEXTO-I3 TEXTO-I3-9thGEN TEXTO-I3-10thGEN" "PROCESADOR-I5-9thGEN PROCESADOR-I5-10thGEN PROCESADOR-I7-9thGEN" "TEXTO-I5-8thGEN TEXTO-I5-9thGEN TEXTO-I5-10thGEN" "PROCESADOR-I7-10thGEN PROCESADOR-I9-9thGEN PROCESADOR-I9-10thGEN" "TEXTO-I7-8thGEN TEXTO-I7-9thGEN TEXTO-I7-10thGEN"; }
 
 .PROCESADOR-I3-8thGEN {
   grid-area: "PROCESADOR-I3-8thGEN";
@@ -422,51 +411,93 @@ header {
   grid-template-rows: 250px 50px 250px 50px 250px 50px;
   padding: 30px;
   gap: 0px 0px;
-  grid-template-areas: "auriculareslogitech--galeria auriculareslogitech2--galeria auriculares logitech3--galeria"
- "TEXTO-G733 TEXTO-G635 TEXTO-G332"
- "auriculareslogitech4--galeria auriculareslogitech5--galeria auriculareslogitech6--galeria"
- "TEXTO-G733KDA TEXTO-GPROGAMING TEXTO-G435"
- "auriculareslogitech7--galeria"
- "TEXTO-G335"; }
-  .imagenes--perifericos .auriculares--logitech {
+  grid-auto-flow: row;
+  grid-template-areas: "auricularesG733 auricularesG635 auricularesG332" "TEXTO-G733 TEXTO-G635 TEXTO-G332" "auricularesG733KDA auricularesGPRO auricularesG435" "TEXTO-G733KDA TEXTO-GPROGAMING TEXTO-G435" "auricularesG335 . ." "TEXTO-G335 . ."; }
+
+.auricularesG733 {
+  grid-area: auricularesG733;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
+  .auricularesG733 .auricularesG733--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculareslogitech--galeria, .imagenes--perifericos .auriculareslogitech2--galeria, .imagenes--perifericos .auriculareslogitech3--galeria, .imagenes--perifericos .auriculareslogitech4--galeria, .imagenes--perifericos .auriculareslogitech5--galeria, .imagenes--perifericos .auriculareslogitech6--galeria, .imagenes--perifericos .auriculareslogitech7--galeria {
-    display: flex;
-    justify-content: center;
-    padding: 15px; }
-  .imagenes--perifericos .auriculares--logitech2 {
+    height: 170px; }
+
+.auricularesG635 {
+  grid-area: auricularesG635;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesG635 .auricularesG635--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculares--logitech3 {
+    height: 170px; }
+
+.auricularesG332 {
+  grid-area: auricularesG332;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesG332 .auricularesG332--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculares--logitech4 {
+    height: 170px; }
+
+.auricularesG733KDA {
+  grid-area: auricularesG733KDA;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesG733KDA .auricularesG733KDA--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculares--logitech5 {
+    height: 170px; }
+
+.auricularesGPRO {
+  grid-area: auricularesGPRO;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesGPRO .auricularesGPRO--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculares--logitech6 {
+    height: 170px; }
+
+.auricularesG435 {
+  grid-area: auricularesG435;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesG435 .auricularesG435--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
-  .imagenes--perifericos .auriculares--logitech7 {
+    height: 170px; }
+
+.auricularesG335 {
+  grid-area: auricularesG335;
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .auricularesG335 .auricularesG335--logo {
     width: 170px;
-    height: 170px;
-    grid-area: "logitech";
-    filter: drop-shadow(8px 8px 8px black); }
+    height: 170px; }
+
+.TEXTO-G733 {
+  grid-area: TEXTO-G733; }
+
+.TEXTO-G635 {
+  grid-area: TEXTO-G635; }
+
+.TEXTO-G332 {
+  grid-area: TEXTO-G332; }
+
+.TEXTO-G733KDA {
+  grid-area: TEXTO-G733KDA; }
+
+.TEXTO-GPROGAMING {
+  grid-area: TEXTO-GPROGAMING; }
+
+.TEXTO-G435 {
+  grid-area: TEXTO-G435; }
+
+.TEXTO-G335 {
+  grid-area: TEXTO-G335; }
 
 .texto--titulo {
   font: 150% "Montserrat";

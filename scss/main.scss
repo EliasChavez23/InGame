@@ -9,7 +9,9 @@ $fontH: 18px ;
 body{
     font-family: "Montserrat",  sans-serif;
     margin: 0px;
-    background-color: $violeta;
+    background: #b5a7a7;
+    background: linear-gradient(90deg, #b5a7a7 0%, #baacac 53%, #d0c2c2 96%, #8f8484 100%);
+    ;
 }
 
 // IMPORT PARTIAL _header.scss//

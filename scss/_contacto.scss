@@ -1,6 +1,5 @@
 // VARIABLES //
-$verde: #70d893;
-$violeta: #9370d8;
+$blanco: #fff;
 $font-texto: 150% "Montserrat";
 
 .texto--formulario--titulo{
@@ -18,18 +17,18 @@ $font-texto: 150% "Montserrat";
         padding: 5px;
     }
     .texto--apellido{
-        background-color: #fff;
+        background-color: $blanco;
     }
     .texto--nombre{
-        background-color: #fff;
+        background-color: $blanco;
     }
     .texto--mail{
-        background-color: #fff;
+        background-color: $blanco;
     }
     .texto--edad{
-        background-color: #fff;
+        background-color: $blanco;
     }
     .texto--problema{
-        background: #fff;
+        background: $blanco;
     }
 }

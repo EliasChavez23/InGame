@@ -14,6 +14,9 @@ $font-texto: 150% "Montserrat";
 .formulario{
     display: flex;
     justify-content: center;
+    label{
+        padding: 5px;
+    }
     .texto--apellido{
         background-color: #fff;
     }

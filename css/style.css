@@ -282,12 +282,13 @@ header {
 
 .imagenes--componentes {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 250px 300px 250px;
   grid-template-rows: 250px 50px 250px 50px 250px 50px;
   padding: 30px;
+  padding-left: 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "PROCESADOR-I3-8thGEN PROCESADOR-I3-9thGEN PROCESADOR-I3-10thGEN" "TEXTO-I3 TEXTO-I3-9thGEN TEXTO-I3-10thGEN" "PROCESADOR-I5-9thGEN PROCESADOR-I5-10thGEN PROCESADOR-I7-9thGEN" "TEXTO-I5-8thGEN TEXTO-I5-9thGEN TEXTO-I5-10thGEN" "PROCESADOR-I7-10thGEN PROCESADOR-I9-9thGEN PROCESADOR-I9-10thGEN" "TEXTO-I7-8thGEN TEXTO-I7-9thGEN TEXTO-I7-10thGEN"; }
+  grid-template-areas: "PROCESADOR-I3-8thGEN PROCESADOR-I3-9thGEN PROCESADOR-I3-10thGEN" "TEXTO-I3 TEXTO-I3-9thGEN TEXTO-I3-10thGEN" "PROCESADOR-I5-9thGEN PROCESADOR-I5-10thGEN PROCESADOR-I7-9thGEN" "TEXTO-I5-9thGEN TEXTO-I5-10thGEN TEXTO-I7-9thGEN" "PROCESADOR-I7-10thGEN PROCESADOR-I9-9thGEN PROCESADOR-I9-10thGEN" "TEXTO-I7-10thGEN TEXTO-I9-9thGEN TEXTO-I9-10thGEN"; }
 
 .PROCESADOR-I3-8thGEN {
   grid-area: "PROCESADOR-I3-8thGEN";
@@ -348,15 +349,6 @@ header {
     width: 140px;
     height: 140px; }
 
-.TEXTO-I5-8thGEN {
-  grid-area: TEXTO-I5-8thGEN; }
-
-.TEXTO-I5-9thGEN {
-  grid-area: TEXTO-I5-9thGEN; }
-
-.TEXTO-I5-10thGEN {
-  grid-area: TEXTO-I5-10thGEN; }
-
 .PROCESADOR-I7-9thGEN {
   grid-area: PROCESADOR-I7-9thGEN;
   display: flex;
@@ -366,6 +358,15 @@ header {
   .PROCESADOR-I7-9thGEN .procesadori79thGEN--logo {
     width: 140px;
     height: 140px; }
+
+.TEXTO-I5-9thGEN {
+  grid-area: TEXTO-I5-9thGEN; }
+
+.TEXTO-I5-10thGEN {
+  grid-area: TEXTO-I5-10thGEN; }
+
+.TEXTO-I7-9thGEN {
+  grid-area: TEXTO-I7-9thGEN; }
 
 .PROCESADOR-I7-10thGEN {
   grid-area: PROCESADOR-I7-10thGEN;
@@ -396,14 +397,52 @@ header {
     width: 140px;
     height: 140px; }
 
-.TEXTO-I7-8thGEN {
-  grid-area: TEXTO-I7-8thGEN; }
-
-.TEXTO-I7-9thGEN {
-  grid-area: TEXTO-I7-9thGEN; }
-
 .TEXTO-I7-10thGEN {
   grid-area: TEXTO-I7-10thGEN; }
+
+.TEXTO-I9-9thGEN {
+  grid-area: TEXTO-I9-9thGEN; }
+
+.TEXTO-I9-10thGEN {
+  grid-area: TEXTO-I9-10thGEN; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .imagenes--componentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    gap: 50px;
+    padding: 30px;
+    grid-template-areas: "PROCESADOR-I3-8thGEN" "TEXTO-I3" "PROCESADOR-I3-9thGEN" "TEXTO-I3-9thGEN" "PROCESADOR-I3-10thGEN" "TEXTO-I3-10thGEN" "PROCESADOR-I5-9thGEN" "TEXTO-I5-9thGEN" "PROCESADOR-I5-10thGEN" "TEXTO-I5-10thGEN" "PROCESADOR-I7-9thGEN" "TEXTO-I7-9thGEN" "PROCESADOR-I7-10thGEN" "TEXTO-I7-10thGEN" "PROCESADOR-I9-9thGEN" "TEXTO-I9-9thGEN" "PROCESADOR-I9-10thGEN"  "TEXTO-I9-10thGEN"; }
+    .imagenes--componentes .PROCESADOR-I9-9thGEN {
+      padding: 20px; }
+    .imagenes--componentes .procesadori38thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori39thGEN--logo {
+      width: 120px;
+      height: 120px; }
+    .imagenes--componentes .procesadori310thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori59thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori510thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori79thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori710thGEN--logo {
+      width: 100px;
+      height: 100px; }
+    .imagenes--componentes .procesadori99thGEN--logo {
+      width: 130px;
+      height: 130px; }
+    .imagenes--componentes .procesadori910thGEN--logo {
+      width: 100px;
+      height: 100px; } }
 
 .imagenes--perifericos {
   display: grid;
@@ -428,7 +467,8 @@ header {
   grid-area: auricularesG635;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesG635 .auricularesG635--logo {
     width: 170px;
     height: 170px; }
@@ -437,7 +477,8 @@ header {
   grid-area: auricularesG332;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesG332 .auricularesG332--logo {
     width: 170px;
     height: 170px; }
@@ -446,7 +487,8 @@ header {
   grid-area: auricularesG733KDA;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesG733KDA .auricularesG733KDA--logo {
     width: 170px;
     height: 170px; }
@@ -455,7 +497,8 @@ header {
   grid-area: auricularesGPRO;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesGPRO .auricularesGPRO--logo {
     width: 170px;
     height: 170px; }
@@ -464,7 +507,8 @@ header {
   grid-area: auricularesG435;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesG435 .auricularesG435--logo {
     width: 170px;
     height: 170px; }
@@ -473,7 +517,8 @@ header {
   grid-area: auricularesG335;
   display: flex;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  filter: drop-shadow(8px 8px 8px black); }
   .auricularesG335 .auricularesG335--logo {
     width: 170px;
     height: 170px; }
@@ -498,6 +543,36 @@ header {
 
 .TEXTO-G335 {
   grid-area: TEXTO-G335; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .imagenes--perifericos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    gap: 50px;
+    padding: 30px;
+    grid-template-areas: "auricularesG733" "TEXTO-G733" "auricularesG635" "TEXTO-G635" "auricularesG332" "TEXTO-G332" "auricularesG733KDA" "TEXTO-G733KDA" "auricularesGPRO" "TEXTO-GPROGAMING" "auricularesG435" "TEXTO-G435" "auricularesG335" "TEXTO-G335"; }
+    .imagenes--perifericos .auricularesG733--logo {
+      width: 140px;
+      height: 140px; }
+    .imagenes--perifericos .auricularesG635--logo {
+      width: 140px;
+      height: 140px; }
+    .imagenes--perifericos .auricularesG332--logo {
+      width: 160px;
+      height: 160px; }
+    .imagenes--perifericos .auricularesG733KDA--logo {
+      width: 140px;
+      height: 140px; }
+    .imagenes--perifericos .auricularesGPRO--logo {
+      width: 140px;
+      height: 140px; }
+    .imagenes--perifericos .auricularesG435--logo {
+      width: 140px;
+      height: 140px; }
+    .imagenes--perifericos .auricularesG335--logo {
+      width: 140px;
+      height: 140px; } }
 
 .texto--titulo {
   font: 150% "Montserrat";
@@ -550,7 +625,7 @@ header {
     width: 315px;
     border-style: double;
     border-width: 5px;
-    border-color: #70d893;
+    border-color: #222020;
     margin-left: 20px; } }
 
 .texto--formulario--titulo {
@@ -563,6 +638,8 @@ header {
 .formulario {
   display: flex;
   justify-content: center; }
+  .formulario label {
+    padding: 5px; }
   .formulario .texto--apellido {
     background-color: #fff; }
   .formulario .texto--nombre {
@@ -587,8 +664,8 @@ header {
     position: sticky;
     top: 0px; }
   .logo {
-    width: 50px;
-    margin-top: 0px;
+    width: 80px;
+    margin-top: -20px;
     margin-left: 0px; }
   nav ul li {
     display: inline-block;
@@ -596,18 +673,6 @@ header {
     font-size: 8.50px; }
   a {
     text-decoration: none;
-    color: black; }
-  .imagenes--componentes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px;
-    gap: 50px;
-    padding: 30px; }
-  .imagenes--perifericos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px;
-    gap: 50px;
-    padding: 30px; } }
+    color: black; } }
 
 /* FIN MEDIAS QUERIES RESPONSIVE */

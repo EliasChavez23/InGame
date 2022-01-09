@@ -68,8 +68,8 @@ body{
         top: 0px;
     }
     .logo{
-        width: 50px;
-        margin-top: 0px;
+        width: 80px;
+        margin-top: -20px;
         margin-left: 0px;
     }
     nav ul li{
@@ -80,20 +80,6 @@ body{
     a{
         text-decoration: none;
         color: black
-    }
-    .imagenes--componentes{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px;
-        gap: 50px;
-        padding: 30px;
-    }
-    .imagenes--perifericos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px;
-        gap: 50px;
-        padding: 30px;
     }
 }
 /* FIN MEDIAS QUERIES RESPONSIVE */

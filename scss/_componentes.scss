@@ -35,18 +35,19 @@ $celeste: rgb(146,220,255);
 
 .imagenes--componentes{  
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 250px 300px 250px;
     grid-template-rows: 250px 50px 250px 50px 250px 50px;
     padding: 30px;
+    padding-left: 80px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
     "PROCESADOR-I3-8thGEN PROCESADOR-I3-9thGEN PROCESADOR-I3-10thGEN"
     "TEXTO-I3 TEXTO-I3-9thGEN TEXTO-I3-10thGEN"
     "PROCESADOR-I5-9thGEN PROCESADOR-I5-10thGEN PROCESADOR-I7-9thGEN"
-    "TEXTO-I5-8thGEN TEXTO-I5-9thGEN TEXTO-I5-10thGEN"
+    "TEXTO-I5-9thGEN TEXTO-I5-10thGEN TEXTO-I7-9thGEN"
     "PROCESADOR-I7-10thGEN PROCESADOR-I9-9thGEN PROCESADOR-I9-10thGEN"
-    "TEXTO-I7-8thGEN TEXTO-I7-9thGEN TEXTO-I7-10thGEN";
+    "TEXTO-I7-10thGEN TEXTO-I9-9thGEN TEXTO-I9-10thGEN";
 }
 
 .PROCESADOR-I3-8thGEN{ 
@@ -118,19 +119,7 @@ $celeste: rgb(146,220,255);
         height: 140px;
     }
 }
-  
-.TEXTO-I5-8thGEN{ 
-    grid-area: TEXTO-I5-8thGEN; 
-}
-  
-.TEXTO-I5-9thGEN{ 
-    grid-area: TEXTO-I5-9thGEN; 
-}
-  
-.TEXTO-I5-10thGEN{ 
-    grid-area: TEXTO-I5-10thGEN; 
-}
-  
+   
 .PROCESADOR-I7-9thGEN{ 
     grid-area: PROCESADOR-I7-9thGEN; 
     display: flex;
@@ -141,6 +130,17 @@ $celeste: rgb(146,220,255);
         width: 140px;
         height: 140px;
     }
+}
+.TEXTO-I5-9thGEN{ 
+    grid-area: TEXTO-I5-9thGEN; 
+}
+  
+.TEXTO-I5-10thGEN{ 
+    grid-area: TEXTO-I5-10thGEN; 
+}
+
+.TEXTO-I7-9thGEN{
+    grid-area: TEXTO-I7-9thGEN;
 }
   
 .PROCESADOR-I7-10thGEN{ 
@@ -178,15 +178,83 @@ $celeste: rgb(146,220,255);
     }
 }
   
-.TEXTO-I7-8thGEN{ 
-    grid-area: TEXTO-I7-8thGEN; 
-}
-  
-.TEXTO-I7-9thGEN{ 
-    grid-area: TEXTO-I7-9thGEN; 
-}
-  
 .TEXTO-I7-10thGEN{ 
     grid-area: TEXTO-I7-10thGEN; 
 }
   
+.TEXTO-I9-9thGEN{ 
+    grid-area: TEXTO-I9-9thGEN; 
+}
+  
+.TEXTO-I9-10thGEN{ 
+    grid-area: TEXTO-I9-10thGEN; 
+}
+ 
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .imagenes--componentes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px;
+        gap: 50px;
+        padding: 30px;
+        grid-template-areas:
+        "PROCESADOR-I3-8thGEN"
+        "TEXTO-I3"
+        "PROCESADOR-I3-9thGEN"
+        "TEXTO-I3-9thGEN"
+        "PROCESADOR-I3-10thGEN"
+        "TEXTO-I3-10thGEN"
+        "PROCESADOR-I5-9thGEN"
+        "TEXTO-I5-9thGEN"
+        "PROCESADOR-I5-10thGEN"
+        "TEXTO-I5-10thGEN"
+        "PROCESADOR-I7-9thGEN"
+        "TEXTO-I7-9thGEN"
+        "PROCESADOR-I7-10thGEN"
+        "TEXTO-I7-10thGEN"
+        "PROCESADOR-I9-9thGEN"
+        "TEXTO-I9-9thGEN"
+        "PROCESADOR-I9-10thGEN" 
+        "TEXTO-I9-10thGEN";
+
+        .PROCESADOR-I9-9thGEN{
+            padding: 20px;
+        }
+        .procesadori38thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori39thGEN--logo{
+            width: 120px;
+            height: 120px;
+        }
+        .procesadori310thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori59thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori510thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori79thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori710thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+        .procesadori99thGEN--logo{
+            width: 130px;
+            height: 130px;
+        }
+        .procesadori910thGEN--logo{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
